@@ -1,0 +1,480 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #0c0c0e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1.2em;
+    text-transform: uppercase;
+}
+
+
+@font-face {
+    font-family: 'nova_stamp';
+    src: url('./Fonts/nova_stamp_personal_use.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+h1 {
+    text-transform: capitalize;
+    font-size: 80px;
+    line-height: 50px;
+    font-family: 'nova_stamp';
+}
+
+
+
+
+section {
+    padding: 0% 10% 0px 10%;
+    overflow: hidden;
+}
+
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.text-sec {
+    color: #625035
+}
+
+
+
+
+.landing {
+    background-image: url('./images/landing_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    color: #ccab86;
+}
+
+.landing .light {
+    width: 20%;
+    position: absolute;
+    right: 10%;
+    z-index: 1;
+}
+
+.landing .light-ray {
+    position: absolute;
+    right: -120px;
+    top: -150px;
+    z-index: 1;
+    mix-blend-mode: lighten;
+}
+
+
+.landing .content {
+    padding-bottom: 100px;
+    width: 100vw;
+    margin-top: auto;
+}
+
+.landing .content .details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.landing .content .details .texts {
+    margin-top: auto;
+}
+
+/* .landing .content .lines, */
+.curosal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.curosal img {
+    width: 300px;
+}
+
+.curosal .arraw {
+    width: 30px;
+    animation: bounce 2s infinite;
+    mix-blend-mode: lighten;
+}
+
+.curosal .revert {
+    width: 30px;
+    transform: scaleY(-1);
+    animation: bounce_revert 2s infinite;
+    animation-delay: 1s;
+
+}
+
+
+/* Keyframes for bounce animation */
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        /* Starting position */
+    }
+
+    50% {
+        transform: translateY(20px);
+        /* Move image up */
+    }
+}
+
+/* Keyframes for bounce animation */
+@keyframes bounce_revert {
+
+    0%,
+    100% {
+        transform: translateY(-20px) scaleY(-1);
+        /* Starting position */
+    }
+
+    50% {
+        transform: translateY(0) scaleY(-1);
+        /* Move image up */
+    }
+}
+
+
+.indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.indicators img {
+    opacity: 0.2;
+    transform: scale(.8);
+}
+
+.indicators .active {
+    animation: pop 1s forwards;
+
+
+}
+
+
+/* Fading animation */
+@keyframes pop {
+    0% {
+        opacity: .4;
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(.8);
+        opacity: 1;
+    }
+}
+
+.wood_button {
+    background-image: url(./images/wood_button.png);
+    background-size: cover;
+    font-size: 1.5em;
+    font-weight: 400;
+    font-family: 'nova_stamp';
+    padding: 3px 20px 3px 20px;
+    border: none;
+    background-color: black;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    letter-spacing: 2px;
+
+}
+
+.wood_button:hover {
+    letter-spacing: 1px;
+
+}
+
+
+.bg-edge {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-size: contain;
+}
+
+
+
+/* .bg-edge{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-size: contain;
+} */
+
+
+
+
+main {
+    background-image: url(./images/background_.png);
+
+}
+
+
+section {
+    /* min-height: 100vh; */
+}
+
+
+.about_gudam_img {
+    position: relative;
+}
+
+
+
+.about_gudam_img_wheel {
+    position: relative;
+    left: 0;
+    bottom: 60px;
+    width: 70%;
+    
+}
+
+
+.btn-dark {
+    background-image: url(./images/dark-btn.png);
+    background-size: contain;
+    color: white;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    margin: 20px 0;
+
+
+}
+
+
+.btn-dark:hover {
+    /* transform: translateX(100px); */
+    background-color: red;
+    opacity: .8;
+}
+
+
+.collections {
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    position: relative;
+}
+
+
+/* art-gallery */
+
+
+.art-head {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+}
+
+.art-head .art-head-con {
+    margin: auto;
+    width: 30%;
+}
+
+.art-gallery {
+    position: relative;
+    margin: 100px 0;
+}
+
+
+.art-gallery .gallery-frames {
+    display: flex;
+    justify-content: space-between;
+    gap: 6%;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-image: url(./images/line_hall_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.gallery-frames .wall {
+    width: 100%;
+    height: 30vw;
+    /* background-color: #ff00ff05; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vw;
+}
+
+.wall .frames {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 160px;
+    /* background-color: #ff000010; */
+    margin-top: 10%;
+}
+
+
+
+.culture {
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Footer */
+footer {
+    background-image: url('./images/footer_bg.png');
+    color: #ccab86;
+    /* min-height: 70vh; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 5% 10%;
+
+    display: grid;
+    gap: 100px;
+    grid-template-columns: 20% 20% 20% 20%;
+    text-transform: capitalize;
+}
+
+footer h3 {
+    color: whitesmoke;
+    font-weight: 200;
+    margin: 40px 0 10px;
+}
+
+
+.link {
+    margin-top: 20px;
+
+}
+
+
+.link a {
+    text-decoration: none;
+    color: whitesmoke
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    section {
+        padding: 0% 4% 0px 4%;
+        overflow: hidden;
+    }
+
+
+    .landing .content .details,
+    .about {
+        flex-direction: column;
+    }
+
+    .about_gudam_img,
+    .about_gudam_img_wheel {
+        width: 100%;
+    }
+
+
+    .art-head {
+        position: relative;
+    }
+
+    .art-head .art-head-con {
+        width: 100%;
+    }
+
+    .art-gallery-links {
+        flex-direction: column;
+        padding: 0 10%;
+        gap: 0px;
+    }
+
+
+    .culture {
+        flex-direction: column;
+    }
+
+
+    .culture_left {
+        text-align: left;
+        width: 30%;
+        flex: 1;
+    }
+
+    .culture_center {
+        width: 25%;
+        flex: 1;
+        margin: 100px 0;
+    }
+
+    .culture_right {
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        width: 40%;
+    }
+
+
+
+    .culture_left{
+        width: 100%;
+        margin: 50px 0;
+    }
+
+    .culture_center{
+        width: 100%;
+        margin: 0 0;
+
+    }
+    .culture_right{
+        width: 100%;
+
+    }
+
+    .collections {
+        grid-template-columns: 100%;
+    }
+
+
+
+    footer {
+        grid-template-columns: 100%;
+        background-size: cover;
+
+
+    }
+
+    footer #black_div {
+        display: none;
+    }
+
+
+}

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A simple static website">
+    <title>Gudhaam | Art cafe - Kozhikode</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/images/logo.png">
+    <link fav />
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="menu-toggle" id="menuToggle">
+                &#9776; <!-- Hamburger icon -->
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <img src="./images/logo.png" class="logo" />
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="landing">
+        <img src="./images/light.png" class="light swing-anim" style="mix-blend-mode: screen;" />
+        <img src="./images/light-ray.png" class="light-ray" />
+
+
+        <div class="content">
+            <div class="details">
+                <div class="texts">
+                    <div class="land-title-anim" id="land_title">
+                        <h1 class="" style="line-height: .8em; letter-spacing: 1px;">A NEW IDEA FOUNDED<br />ON OLD
+                            ORIGINS</h1>
+                    </div>
+
+                    <div class="land-detail-anim" id="land_detail">
+                        <p style="font-size: 1.5em; line-height: 1.2em; margin-top: 10px; width: 90%;">GUDHAAM ART CAFE
+                            - KOZHIKODE
+                            (CALICUT), LITERALLY BREATHING NEW LIFE INTO
+                            AGE-OLD CULTURES.</p>
+                    </div>
+                    <button class="wood_button" style="margin-top: 10px;">READ MORE</button>
+                </div>
+
+                <div class="curosal" id="land_product">
+                    <img src="./images/arraw.png" class="arraw" />
+                    <img src="./images/product_1.png" id="product" class="land-img-anim" style="margin: 40px 0;" />
+                    <img src="./images/arraw.png" class="arraw revert" />
+                </div>
+
+            </div>
+
+            <div class="indicators">
+                <img src="./images/curosal-dot.png" class="active" />
+                <img src="./images/curosal-dot.png" class="" />
+                <img src="./images/curosal-dot.png" class="" />
+                <img src="./images/curosal-dot.png" class="" />
+            </div>
+
+
+        </div>
+        <img src="./images/background_edge.png" class="bg-edge" />
+
+    </section>
+
+
+
+
+
+
+    <!-- SECTIONS -->
+
+    <main>
+
+        <!-- ABOUT -->
+        <section class="about row">
+            <div>
+                <h1 style="font-size: 3em;  margin: 200px 0 30px; width: 80%; line-height: .8em;">COME TAKE A WALK DOWN
+                    MEMORY LANE</h1>
+                <p class="text-sec"
+                    style=" font-family: 'nova_stamp'; font-size: 30px; line-height: 30px; letter-spacing: 2px;">
+                    <span style="color: #000">"GUDHAAM"</span> IS THE MALAYALAM WORD FOR WAREHOUSE, OBVIOUSLY DERIVED
+                    FROM  THE TERM <span style="color: #000">"GODOWN"</span>.
+                </p>
+                <button class="btn-dark" style="margin-top: 80px;">STORY OF GUDHAAM</button>
+                <p style="font-weight: 500">OUR EXCLUSIVE GUDHAAM, RIGHT AT THE HEART OF GUJARATI STREET, IS ALMOST 160
+                    YEARS OLD, THIS BUILDING
+                    IS INITIALLY USED AS STORAGE UNIT FOR RICE SACKS, THE TRADITIONAL BUILDING AND BUSINESS HAS NOW BEEN
+                    ENTIRELY TRANSFORMED INTO A MODERN ENTERPRISE WHILE STILL RETAINING ITS TIMELESS HERITAGE. GUDHAAM
+                    IS A NEW IDEA FOUNDED ON OLD ORIGINS – LITERALLY BREATHING NEW LIFE INTO AGE-OLD CULTURES THROUGH
+                    THE REVIVAL ARCHITECTURAL STYLE!</p>
+            </div>
+
+            <div style="position: relative; margin-top: 100px; ">
+                <img src="./images/gudam_photo.png" class="about_gudam_img" />
+                <img src="./images/wheel_barrow.png" class="about_gudam_img_wheel" />
+            </div>
+
+        </section>
+
+
+        <section style="position: relative;">
+            <div class="collections">
+
+                <div>
+                    <img src="./images/collection_1.png" style="width: 70%;" />
+                    <h1 style="font-size: 50px; line-height: 40px;">
+                        ANTIQUE STYLE ACCESSORIES
+                    </h1>
+                    <p style="margin: 20px 0; width: 60%;">
+                        TURN YOUR HOUSE INTO A HOME WITH A SELECTION OF DECORATIVE ACCESSORIES FROM OUR WORLD CLASS
+                        COLLECTION.
+                    </p>
+                </div>
+
+                <div>
+                    <img src="./images/collection_2.png" style="width: 80%;" />
+                    <h1 style="font-size: 50px; line-height: 40px;">
+                        ART & <br />DECORATIVE <br />ITEMS
+                    </h1>
+                    <p style="margin: 20px 0; width: 60%;">
+                        EXTENSIVE COLLECTION OF BEAUTIFUL HANDICRAFT ITEMS, HANDICRAFT VASES, STATUES, WALL HANGINGS,
+                        WOODEN, CERAMIC AND METAL HANDICRAFTS
+                    </p>
+                </div>
+
+                <div style="display: flex; flex-direction: column; ">
+                    <img src="./images/collection_3.png" style="margin-left: auto;" />
+                    <div style="position: relative; top: -100px;">
+                        <h1 style="font-size: 50px; line-height: 40px;">
+                            VINTAGE STYLE
+                            <br /> FURNITURE
+                        </h1>
+                        <p style="margin: 20px 0;">
+                            WOODEN FURNITURE SETS FROM OUR VINTAGE STYLE FURNITURE COLLECTIONS THAT IMPARTS THE LOOK OF
+                            ANTIQUE AND RUSTIC.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <img src="./images/collection_4.png" style="position: absolute; right: 0; bottom: 0;  width: 30%;" />
+            <button class="btn-dark">VIEW OUR COLLECTIONS</button>
+
+
+
+        </section>
+
+
+        <!-- ART GALLERY -->
+        <section class="art-gallery">
+
+            <div class="art-head">
+                <div class="art-head-con">
+                    <p style="font-size: 1.5em;">FACILITIES</p>
+                    <h1 style="font-size: 4em; line-height: 1em;">ART GALLERY</h1>
+                    <p style="  width: 70%;">AN ART GALLERY WHERE VARIOUS TYPES OF EXHIBITIONS ARE CONDUCTED ON A
+                        REGULAR BASIS BY TALENTED
+                        INDIVIDUALS
+                    </p>
+                </div>
+            </div>
+
+            <!-- <img src="./images/line_hall_bg.png" style="width: 100%; position: relative;" /> -->
+
+            <div class="gallery-frames">
+                <div class="wall">
+                    <div class="frames">
+                        <img src="./images/frames.png" style="width: 100%;" />
+                    </div>
+                </div>
+                <div class="wall">
+                    <div class="frames">
+                        <img src="./images/frames.png" style="width: 100%;" />
+                    </div>
+                </div>
+                <div class="wall">
+                    <div class="frames">
+                        <img src="./images/frames.png" style="width: 100%;" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="row art-gallery-links" style="justify-content: center; gap: 30px;">
+                <button class="btn-dark" style="display: flex; justify-content: center; align-items: center;">
+                    ART GALLERY
+                    <span><img src="./images/arraw-btn.png" style="width: 60px; margin-left: 30px;" /></span>
+                </button>
+
+                <button class="btn-dark" style="display: flex; justify-content: center; align-items: center;">
+                    GALLERY BOOKING
+                    <span><img src="./images/arraw-btn.png" style="width: 60px; margin-left: 30px;" /></span>
+                </button>
+            </div>
+
+        </section>
+
+
+
+
+
+
+        <section style="text-align: center;">
+            <h1 style="font-size: 3em; line-height: 1em;">EXPERIENCE THE CULTURE</h1>
+            <p style="font-size: 1.5em; margin-top: 10px;">A GREAT SELECTION OF COLLECTIBLE ANTIQUE ITEMS</p>
+
+            <div class="row culture">
+                <div class="culture_left">
+                    <p style="font-size: 1.5em; font-weight: 600; margin-bottom: 20px;">GALLERY AND BEYOND</p>
+                    <p style="width: 50%;">Averaging between thirty to fourty exhibitions and events each year..
+                    </p>
+                </div>
+                <img src="./images/culture.png" class="culture_center" />
+                <div class="culture_right">
+                    <div>
+                        <p style="font-size: 1.5em; font-weight: 600; margin-bottom: 20px; ">Come, visit us</p>
+                        <p>How to get here...</p>
+                        <button class="btn-dark" style="display: flex; justify-content: center; align-items: center;">
+                            Direction
+                            <span><img src="./images/arraw-btn.png" style="width: 60px; margin-left: 30px;" /></span>
+                        </button>
+                    </div>
+                    </p>
+                </div>
+
+
+            </div>
+
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <img src="./images/background_edge.png" style="transform: scaleY(-1) translateY(2px); width: 100%;" />
+
+
+    <footer>
+        <div>
+            <img src="./images/logo.png" style="mix-blend-mode: difference; height: 200px;" />
+
+            <p>Gudhaam Art Cafe - Kozhikode (Calicut), literally breathing new life into age-old cultures...</p>
+            <p class="link"><a href="#">Read mode ...</a></p>
+
+            <h3>Follow us</h3>
+            <p>Don’t miss our future updates and latest news follow us on social media:</p>
+        </div>
+        <div>
+            <h3>Follow us</h3>
+            <p class="link">
+                <a href='#'>Home</a>
+            </p>
+            <p class="link">
+                <a href='#'>Story of Gudhaam</a>
+            </p>
+            <p class="link">
+                <a href='#'>Art gallery</a>
+            </p>
+            <p class="link">
+                <a href='#'>StoreArt cafe</a>
+            </p>
+            <p class="link">
+                <a href='#'>Facilities</a>
+            </p>
+            <p class="link">
+                <a href='#'>Gudhaam in pictures</a>
+            </p>
+            <p class="link">
+                <a href='#'>Contact us</a>
+            </p>
+        </div>
+        <div id="black_div"></div>
+        <div>
+            <div>
+                <h3>Contact</h3>
+                <p class="link"><a href="">+91 9072 661 933 <a /></a>
+                <p class="link"><a href="">+91 9539 810 680 <a /></p>
+                <p class="link" style="text-transform: lowercase;"><a href="">hello@gudhaam.com <a /></p>
+            </div>
+
+            <div>
+                <h3>VISIT US</h3>
+                <p>Gudhaam,
+                    12/431, Gujarati St, Kuttichira,
+                    Kozhikode, Kerala 673001 Kozhikode - 673004, Kerala.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Link to JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
