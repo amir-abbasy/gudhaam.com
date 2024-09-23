@@ -1,0 +1,220 @@
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    background-color: #ccab86;
+    background-image: url(./images/dark-btn.png);
+    background-size: contain;
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    top: 40px;
+}
+
+.dropdown-menu li {
+    list-style: none;
+}
+
+.dropdown-menu a {
+    /* color: #242424; */
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+.inner_banner_Section {
+    width: 100%;
+    display: inline-block;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image: url(./images/background_.png);
+    margin-top: 80px;
+    border-image: url(images/background_edge.png) 30 round;
+    border-bottom: 10px solid;
+    margin-bottom: -10px;
+    text-align: center;
+}
+
+.inner_banner_Section h1 {
+    font-size: 50px;
+}
+
+.founder_image_sec {
+    width: 100%;
+    max-width: 400px;
+}
+
+.founder_image_sec img {
+    width: 100%;
+    mix-blend-mode: luminosity;
+    transform: rotate(10deg);
+}
+
+.founder_section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #b5a08770;
+    margin-bottom: 50px;
+    border-image: url(images/background_edge.png) 30 round;
+    border-top: 10px solid;
+    border-bottom: 10px solid;
+}
+
+.section_2_about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section_2_image {
+    min-width: 500px;
+    max-width: 100%;
+}
+
+.section_2_image img {
+    mix-blend-mode: luminosity;
+    width: 100%;
+}
+
+.section_2_about {
+    gap: 30px;
+}
+
+.section_2_about p {
+    text-transform: capitalize;
+}
+
+.collection_lst {
+    width: 100%;
+    display: inline-block;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.list_row {
+    width: 100%;
+    display: flex;
+}
+
+.list_row .list_box {
+    width: 33%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.list_box img {
+    max-width: 100%;
+    height: 150px;
+}
+
+.owl-nav {
+    display: flex !important;
+    position: absolute;
+    left: 1%;
+    top: 50%;
+    width: 98%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    height: 0;
+}
+
+.owl-nav button {
+    width: 40px;
+    height: 40px;
+    background-color: #fff !important;
+    color: #666 !important;
+    text-align: center;
+    border-radius: 40px;
+    display: inline-block;
+}
+
+
+
+.common_title {
+    font-size: 3em;
+    margin: 10px 0;
+    line-height: .8em;
+}
+
+.fac-mems {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    align-items: center;
+    padding: 40px 10vw;
+    gap: 60px;
+}
+
+.fac-mems-item {}
+
+.fac-mems-item img {
+    width: 80%;
+    transition: .3s;
+}
+
+.fac-mems-item:hover img {
+    mix-blend-mode: luminosity;
+}
+
+
+.fac-gal {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px 10vw;
+    margin-top: 100px;
+}
+
+.fac-gal, .gallery img {
+    width: 100%;
+
+}
+
+.fac-gal img:hover {
+    mix-blend-mode: luminosity;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px 10vw;
+    margin-top: 100px;
+}
+
+
+@media (max-width:1200px) {
+    .about_gudam_img {
+        max-width: 400px;
+    }
+
+    .section_2_image {
+        min-width: 300px;
+    }
+
+    .section_2_image img {
+        width: 100%;
+    }
+}
+
+@media (max-width:991px) {
+    .section_2_image img {
+        width: 100%;
+    }
+}
+
+@media (max-width:768px) {
+    .section_2_about {
+        flex-direction: column;
+    }
+
+    .section_2_about {
+        flex-direction: column;
+    }
+}

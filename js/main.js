@@ -4,12 +4,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.getElementById('menuToggle');
     const navMenu = document.getElementById('navMenu');
 
-    menuToggle.addEventListener('click', function() {
+    menuToggle.addEventListener('click', function () {
         navMenu.classList.toggle('active');
     });
 
 
-    
+
 
 
     var avtiveIndex = 0
@@ -21,11 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }, {
         title: 'A new idea founded <br/>on old origins',
         desc: 'Gudhaam Art Cafe - Kozhikode (Calicut), literally breathing new life into age-old cultures.',
-        img: './images/collection_2.png'
+        img: './images/product_2.png'
     }, {
         title: 'Making art accessible to all',
         desc: 'Gudhaam is filled with unexpected pieces of art everywhere you look',
-        img: './images/collection_1.png'
+        img: './images/collection_2.png'
     }, {
         title: 'Vintage and antique <br/>style accessories',
         desc: 'Sourced from different areas of the country',
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Update the index for the next slide
         avtiveIndex = (avtiveIndex + 1) % curosal_data.length;
-        $('.indicators img').eq(avtiveIndex-1).removeClass('active');
+        $('.indicators img').eq(avtiveIndex - 1).removeClass('active');
         $('.indicators img').eq(avtiveIndex).addClass('active');
 
 
@@ -71,3 +71,69 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+
+// Get the navbar element
+const navbar = $('.navbar')
+
+// Initialize the last scroll position
+let lastScrollY = window.scrollY;
+
+// Function to handle scroll events
+const handleScroll = () => {
+    navbar.addClass('navbar_hidden');
+
+    // Get the current scroll position
+    const currentScrollY = window.scrollY;
+
+    // If scrolling down, hide the navbar
+    if (currentScrollY > lastScrollY) {
+        navbar.addClass('navbar_hidden');
+    } else {
+        // If scrolling up, show the navbar
+        navbar.removeClass('navbar_hidden');
+    }
+
+    // Check if the scroll is beyond 100vh (i.e., the viewport height)
+    if (currentScrollY > window.innerHeight) {
+        navbar.addClass('navbar_after_scroll');
+    } else {
+        navbar.removeClass('navbar_after_scroll');
+
+    }
+
+
+    // Update the last scroll position
+    lastScrollY = currentScrollY;
+};
+
+// Add the scroll event listener
+window.addEventListener('scroll', handleScroll);
+
+
+
+if ($('.imageSlide')?.owlCarousel) {
+
+    $('.imageSlide').owlCarousel({
+        loop: true,
+        margin: 15,
+        dots: true,
+        nav: true,
+        items: 1,
+        // responsive:{
+        // 0:{
+        //     items:2
+        // },
+        // 600:{
+        //     items:3
+        // },
+        // 1000:{
+        //     items:6
+        // }
+        // }
+    })
+}
+
+
+
+// Radio
+// new Audio('https://pagaliworld.com/files/download/type/128/id/7717').play()

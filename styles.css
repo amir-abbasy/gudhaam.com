@@ -51,8 +51,6 @@ section {
 }
 
 
-
-
 .landing {
     background-image: url('./images/landing_bg.png');
     background-repeat: no-repeat;
@@ -80,7 +78,6 @@ section {
 
 
 .landing .content {
-    padding-bottom: 100px;
     width: 100vw;
     margin-top: auto;
 }
@@ -89,10 +86,13 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+
 }
 
 .landing .content .details .texts {
     margin-top: auto;
+    transform: translateY(-100px);
 }
 
 /* .landing .content .lines, */
@@ -101,6 +101,8 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 40px;
+
 }
 
 .curosal img {
@@ -158,6 +160,9 @@ section {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    /* padding-bottom: 200px; */
+    transform: translateY(-100px);
+
 }
 
 
@@ -200,13 +205,18 @@ section {
     background-color: black;
     transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
     letter-spacing: 2px;
+    cursor: pointer;
 
 }
+
+
+
+
 
 .wood_button:hover {
     letter-spacing: 1px;
-
 }
+
 
 
 .bg-edge {
@@ -238,6 +248,15 @@ section {
     /* min-height: 100vh; */
 }
 
+a {
+    text-decoration: none;
+    color: #493f2f
+}
+
+img:hover {
+    mix-blend-mode: normal;
+
+}
 
 .about_gudam_img {
     position: relative;
@@ -262,16 +281,45 @@ section {
     padding: 10px 20px;
     border: none;
     margin: 20px 0;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
 
+
+.btn-dark::after {
+    content: "";
+    width: 60px;
+    height: 10px;
+    position: absolute;
+    background-image: url(./images/arraw-btn.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 0.5s ease;
+    opacity: 0;
 
 }
 
 
-.btn-dark:hover {
-    /* transform: translateX(100px); */
-    background-color: red;
-    opacity: .8;
+.btn-dark:hover .btn-arrow {
+    transform: translateX(150%);
 }
+
+.btn-dark:hover::after {
+    transform: translateX(100%);
+    opacity: 1;
+    right: 70px;
+}
+
+
+
+/* Arrow image */
+.btn-arrow {
+    width: 60px;
+    margin-left: 30px;
+    transition: transform 0.2s ease;
+}
+
 
 
 .collections {
@@ -314,6 +362,7 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    perspective: 140px;
 
 }
 
@@ -327,9 +376,12 @@ section {
     justify-content: center;
     margin-top: 10vw;
     overflow: hidden;
-    perspective: 1000px;
     /* The lower the value, the more extreme the perspective */
+    /* background-color: #493f2f50; */
+
 }
+
+
 
 .wall .frames {
     display: flex;
@@ -342,26 +394,47 @@ section {
     animation: move 10s linear infinite;
     /* transform: rotateY(40deg) rotateX(40deg) translateZ(-100px); */
     /* 10 seconds duration */
+    transform-style: preserve-3d;
+    /* background-color: red; */
+
+
+    /* transform: rotateX(-45deg) rotateY(30deg); */
 
 }
 
 @keyframes move {
     0% {
         transform: translateX(0%);
-        /* Start from outside the right */
     }
 
     100% {
         transform: translateX(-100%);
-        /* Move to the left end */
     }
 }
+
+
+
+.gallery-frames .right {
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(-20deg) translateX(3vw) scaleY(1.3);
+}
+
+.gallery-frames .left {
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(20deg) translateX(-3vw) scaleY(1.3);
+}
+
+.gallery-frames .center {
+    transform: translateY(-1vw);
+}
+
 
 
 .culture {
     justify-content: space-between;
     align-items: center;
 }
+
 
 /* Footer */
 footer {
@@ -377,12 +450,28 @@ footer {
     gap: 100px;
     grid-template-columns: 20% 20% 20% 20%;
     text-transform: capitalize;
+    /* -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px); */
+    
 }
 
 footer h3 {
     color: whitesmoke;
     font-weight: 200;
     margin: 40px 0 10px;
+}
+
+.logo_sec {
+    padding: 0 !important;
+}
+
+.main_header.fixed {
+    position: fixed;
+    left: 0;
+    background-color: #493f2f;
+    z-index: 9;
+    width: 100%;
+    height: 110px;
 }
 
 
@@ -397,6 +486,57 @@ footer h3 {
     color: whitesmoke
 }
 
+
+
+.culture_left {
+    text-align: left;
+    flex: 1;
+}
+
+
+.culture_center {
+    text-align: center;
+    flex: 1;
+    margin: auto;
+    padding: 100px 0;
+}
+
+
+
+.contact-form {
+    padding: 40px 0;
+}
+
+.contact-form .form-group {
+    margin: 20px 0;
+    width: 70%;
+    border: 2px solid
+}
+
+.contact-form input,
+textarea {
+    background: transparent;
+    border: none;
+    outline-style: none;
+    color: black;
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+    font-weight: 600;
+}
+
+::placeholder {
+    color: #625035;
+    opacity: 1; /* Firefox */
+    font-weight: lighter;
+
+  }
+  
+  ::-ms-input-placeholder { /* Edge 12 -18 */
+    color: #625035;
+    font-weight: lighter;
+
+  }
 
 
 
@@ -417,6 +557,20 @@ footer h3 {
     .about_gudam_img_wheel {
         width: 100%;
     }
+
+    #land_title h1 {
+        font-size: 3em;
+    }
+
+    #land_detail p {
+        font-size: 1em;
+    }
+
+    #product {
+        max-height: 200px;
+        width: auto;
+    }
+
 
 
     .art-head {
@@ -475,13 +629,17 @@ footer h3 {
 
     .culture_right {
         width: 100%;
-
     }
 
     .collections {
         grid-template-columns: 100%;
     }
 
+
+
+    .contact-form .form-group {
+        width: 100%;
+    }
 
 
     footer {
