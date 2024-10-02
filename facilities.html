@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="css.css">
     <link rel="stylesheet" href="custom-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
@@ -37,7 +38,7 @@
                         <use xlink:href="#menu" />
                         <use xlink:href="#menu" />
                     </svg>
-                   <img src="./images/logo.png" style="width: 50px; " />
+                    <img src="./images/logo.png" style="width: 50px; " />
                 </div>
 
                 <!-- SVG -->
@@ -48,22 +49,30 @@
                     </symbol>
                 </svg>
             </div>
+
             <ul class="nav-menu" id="navMenu">
                 <a class="logo_sec" href="index.html"><img src="./images/logo.png" class="logo" /></a>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-gudham.html">Story of Gudhaam</a></li>
-                <li class="dropdown"><a href="#">At the Gallery</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="art-gallery.html">Art Gallery</a></li>
-                        <li><a href="store.html">Store</a></li>
-                        <li><a href="art-cafe.html">Art Cafe</a></li>
-                        <li><a href="facilities.html">Facilities</a></li>
-                        <li><a href="photo-gallery.html">Gudhaam in pictures</a></li>
-                    </ul>
-                </li>
+                <!-- <li><a href="index.html">Home</a></li> -->
+                <li><a href="about-gudham.html">About Us</a></li>
+                <li><a href="store.html">Souvenir Shop</a></li>
+                <li><a href="facilities.html">Antique & Vintage Studio</a></li>
+                <li><a href="art-cafe.html">Art Cafe</a></li>
+                <li><a href="artist-spot.html">Live Artist Spot</a></li>
                 <li><a href="contact.html">Contact</a></li>
-            </ul>
 
+                <li class="social-icons row">
+                    <a href="https://www.instagram.com/gudhaam/" title="instagram" style="padding:14px 10px">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/gudhaam/" title="facebook" style="padding:14px 10px">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x3ba65986023109b9:0x72ff2c5fa2e7a845?source=g.page.share"
+                        title="locate" style="padding:14px 10px">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
             <img src="./images/background_edge.png" class="bg-edge border-img" />
         </nav>
     </header>
@@ -72,7 +81,7 @@
 
     <section class="inner_banner_Section">
         <div class="container">
-            <h1>Facilities</h1>
+            <h1>Antique & Vintage Studio</h1>
             <p>At Gudhaam art cafe</p>
         </div>
     </section>
@@ -80,8 +89,7 @@
 
     <main>
 
-
-        <section style="display: flex; align-items: center;">
+        <section class="row fac">
             <div>
                 <h1 class="common_title">A moment of retreat in the heart of Kozhikde</h1>
                 <p style="font-weight: 500;margin-top: 15px; margin-top: 40px; ">A vintage space for your workshops,
@@ -95,9 +103,7 @@
                     the evening Calicut sky.
                 </p>
             </div>
-            <div style=" padding: 100px;">
-                <img src="./images/gudam_photo.png" class="" style="width: 30vw;" />
-            </div>
+                <img src="./images/gudam_photo.png" class="fac_img" />
         </section>
 
 
@@ -213,17 +219,27 @@
 
             <h3>Follow us</h3>
             <p>Don’t miss our future updates and latest news follow us on social media:</p>
+            <div class="social-icons row">
+                <a href="https://www.instagram.com/gudhaam/" title="instagram" style="padding:14px 10px; color: wheat;">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/gudhaam/" title="facebook" style="padding:14px 10px; color: wheat;">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x3ba65986023109b9:0x72ff2c5fa2e7a845?source=g.page.share"
+                    title="locate" style="padding:14px 10px; color: wheat;">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                </a>
+            </div>
+
         </div>
-        <div>
-            <h3>Follow us</h3>
+        <div class="links">
             <ul>
-                <li class="link"><a href="index.html">Home</a></li>
-                <li class="link"><a href="about-gudham.html">Story of Gudhaam</a></li>
-                <li class="link"><a href="art-gallery.html">Art Gallery</a></li>
-                <li class="link"><a href="store.html">Store</a></li>
+                <li class="link"><a href="about-gudham.html">About Us</a></li>
+                <li class="link"><a href="store.html">Souvenir Shop</a></li>
+                <li class="link"><a href="facilities.html">Antique & Vintage Studio</a></li>
                 <li class="link"><a href="art-cafe.html">Art Cafe</a></li>
-                <li class="link"><a href="facilities.html">Facilities</a></li>
-                <li class="link"><a href="photo-gallery.html">Gudhaam in pictures</a></li>
+                <li class="link"><a href="artist-spot.html">Live Artist Spot</a></li>
                 <li class="link"><a href="contact.html">Contact</a></li>
             </ul>
 

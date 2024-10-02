@@ -17,6 +17,67 @@
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <style>
+        .intro {
+            text-align: center;
+        }
+
+        .intro h2 {
+            font-size: 2.5em;
+            font-family: 'nova_stamp';
+            line-height: 2.5em;
+        }
+
+        .intro p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .highlight {
+            color: #c0392b;
+            font-weight: bold;
+        }
+
+        .activities {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .activity {
+            border-radius: 10px;
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .activity:hover {
+            transform: translateY(-10px);
+        }
+
+        .activity img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .activity h3 {
+            font-size: 1.5em;
+            line-height: 1.1em;
+
+        }
+
+        .activity p {
+            font-size: 1em;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -70,75 +131,53 @@
 
 
 
+
     <section class="inner_banner_Section">
         <div class="container">
-            <h1 style="font-size: 35px; line-height: .9;">No.<span style="font-family: sans-serif;">1</span> collection
-                of vintage style
-                antiques and furnitures in kozhikode.</h1>
-            <p>Come and experience our exclusive collections at Gudhaam</p>
+            <h1 style="font-size: 35px;">Live Artist Spot</h1>
+            <p>Where Creativity Comes to Life</p>
         </div>
     </section>
 
+
+
     <main>
 
-
-
-        <section class="section_2_about row" style="align-items: center;">
-            <div class="section_2_image">
-                <img src="./images/1024-img-30.jpg" class="">
-            </div>
-            <div>
-                <h1 style="font-size: 3em;  margin: 10pxs 0 30px; width: 80%; line-height: .8em;">Discover the best in
-                    class home décor collections to add that final touch of perfection to your home.</h1>
-                <h5 style="font-weight: 500;font-size: 18px;margin-top: 15px; text-transform: none;">Gudhaam antiques
-                    collections are well
-                    known for decorative items including lighting, clocks, ceramics, glassware, accessories and vintage
-                    style furnitures.</h5>
-                <p style="font-weight: 500; margin-top: 15px; text-transform: none;">We cater for the designer and
-                    decorator in everyone with
-                    an offering of quality antique style home decor items vintage style furnitures, bronzes, chandeliers
-                    and ornaments as well as general architectural antiques and design decor items for your home.</p>
-
-            </div>
+        <section class="intro">
+            <h2 style="line-height: 1em; margin-top: 60px;">A Space for Artists to Flourish</h2>
+            <p>The <span class="highlight">Live Artist Spot</span> is a unique area where artists can gather to create,
+                collaborate, and inspire. Whether you are an established artist or just beginning your creative journey,
+                our
+                space is designed to nurture your talent and bring your ideas to life.</p>
         </section>
 
-
-
-        <section class="collection_lst">
-            <div class="list_row">
-
-                <div class="list_box">
-                    <img src="./images/collection_2.png">
-                    <h1 style="font-size:30px; line-height: 40px;">
-                        Premium quality </br>
-                        art and paintings
-                    </h1>
-
-                </div>
-
-                <div class="list_box">
-                    <img src="./images/collection_3.png">
-                    <h1 style="font-size: 30px; line-height: 40px;">
-                        Home decore accessories
-                    </h1>
-
-                </div>
-
-                <div class="list_box">
-                    <img src="./images/collection_4.png">
-                    <h1 style="font-size:30px; line-height: 40px;">
-                        Vintage style
-                        furniture
-                    </h1>
-                </div>
+        <section class="activities">
+            <!-- Activity 1: Live Painting -->
+            <div class="activity">
+                <img src="./images/fram1.png" alt="Live Painting Session">
+                <h3>Live Painting Sessions</h3>
+                <p style="margin-top: 10px;">Join other artists in a dynamic environment where you can paint live, share techniques, and showcase
+                    your
+                    creative process.</p>
             </div>
 
+            <!-- Activity 2: Collaborative Art Projects -->
+            <div class="activity">
+                <img src="./images/frames.png" alt="Collaborative Art Projects">
+                <h3>Collaborative Art Projects</h3>
+                <p style="margin-top: 10px;">Work together with fellow artists on exciting collaborative projects. Explore new mediums and create
+                    something truly unique.</p>
+            </div>
+
+            <!-- Activity 3: Art Workshops -->
+            <div class="activity">
+                <img src="./images/culture.png" alt="Art Workshops">
+                <h3>Art Workshops</h3>
+                <p style="margin-top: 10px;">Attend workshops led by experienced artists. Learn new techniques and improve your craft in an
+                    inspiring
+                    environment.</p>
+            </div>
         </section>
-
-
-
-
-
     </main>
 
 
@@ -201,9 +240,7 @@
 
         </div>
     </footer>
-
     <!-- Link to JavaScript -->
     <script src="js/main.js"></script>
 </body>
-
 </html>
